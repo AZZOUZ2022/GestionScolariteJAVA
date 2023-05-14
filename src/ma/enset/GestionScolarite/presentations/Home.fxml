@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.GestionScolarite.presentations.HomeController">
+    <children>
+        <AnchorPane fx:id="navbar" layoutX="-1.0" prefHeight="598.0" prefWidth="204.0" styleClass="navbar" stylesheets="css/dashboard.css" />
+        <AnchorPane fx:id="home_page" layoutX="203.0" layoutY="30.0" prefHeight="553.0" prefWidth="694.0" styleClass="cog" stylesheets="css/dashboard.css">
+            <children>
+                <AnchorPane prefHeight="159.0" prefWidth="694.0" styleClass="card-top" stylesheets="css/dashboard.css">
+                    <children>
+                        <Label layoutX="260.0" layoutY="97.0" prefHeight="62.0" prefWidth="391.0" text="Gestion scolarité" textFill="WHITE">
+                            <font>
+                                <Font name="BatmanForeverAlternate" size="25.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="96.0" fitWidth="391.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="images/Logo_site_myscol.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="total_student_card" layoutX="42.0" layoutY="169.0" prefHeight="159.0" prefWidth="288.0" styleClass="card-dashboard1" stylesheets="css/dashboard.css">
+                    <children>
+                        <ImageView fitHeight="96.0" fitWidth="130.0" layoutX="170.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="images/33308.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#ETU" prefHeight="53.0" prefWidth="133.0" text="Etudiants">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="total_enrolled_card" layoutX="42.0" layoutY="350.0" prefHeight="159.0" prefWidth="288.0" styleClass="card-dashboard4" stylesheets="@css/dashboard.css">
+                    <children>
+                        <ImageView fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="images/preview.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="14.0" layoutY="53.0" mnemonicParsing="false" onAction="#fil" prefHeight="53.0" prefWidth="133.0" text="Filières">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="total_graduated_card" layoutX="369.0" layoutY="169.0" prefHeight="159.0" prefWidth="288.0" styleClass="card-dashboard3" stylesheets="@css/dashboard.css">
+                    <children>
+                        <ImageView fitHeight="96.0" fitWidth="130.0" layoutX="166.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="images/782702.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#not" prefHeight="53.0" prefWidth="127.0" text="Notes">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="total_inactive_card" layoutX="369.0" layoutY="350.0" prefHeight="159.0" prefWidth="288.0" styleClass="card-dashboard2" stylesheets="@css/dashboard.css">
+                    <children>
+                        <ImageView fitHeight="96.0" fitWidth="130.0" layoutX="158.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="images/809310.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#abs" prefHeight="53.0" prefWidth="133.0" text="Absence">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

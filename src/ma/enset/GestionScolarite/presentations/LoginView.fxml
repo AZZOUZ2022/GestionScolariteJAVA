@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.GestionScolarite.presentations.LoginController">
+    <children>
+        <AnchorPane layoutY="14.0" prefHeight="500.0" prefWidth="800.0" styleClass="login-bg" stylesheets="@css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane layoutX="401.0" prefHeight="500.0" prefWidth="399.0">
+                    <children>
+                        <Label layoutX="140.0" layoutY="152.0" text="Sign In" textFill="#509dea">
+                            <font>
+                                <Font name="Berlin Sans FB" size="40.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="username" layoutX="89.0" layoutY="236.0" prefHeight="28.0" prefWidth="220.0" promptText="Username" styleClass="text-field-design" stylesheets="@css/style.css">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="91.0" layoutY="285.0" prefHeight="28.0" prefWidth="220.0" promptText="Password" styleClass="text-field-design" stylesheets="@css/style.css">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <Button layoutX="167.0" layoutY="342.0" mnemonicParsing="false" onAction="#login" prefHeight="33.0" prefWidth="67.0" styleClass="button-design" text="Button">
+                            <stylesheets>
+                                <URL value="@css/style.css" />
+                                <URL value="@css/style.css" />
+                            </stylesheets>
+                        </Button>
+                        <Hyperlink layoutX="120.0" layoutY="432.0" styleClass="hyperlink-design" stylesheets="@css/style.css" text="Create new Account ?">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="15.0" />
+                            </font>
+                        </Hyperlink>
+                        <Button layoutX="364.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="26.0" styleClass="exit" stylesheets="@css/style.css" textFill="WHITE">
+                            <graphic>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="500.0" prefWidth="399.0">
+                    <children>
+                        <ImageView fx:id="myscol" fitHeight="102.0" fitWidth="344.0" layoutX="28.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Logo_site_myscol.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
